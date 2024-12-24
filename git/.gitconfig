@@ -1,0 +1,13 @@
+[user]
+	name = Thibeau Fuhrer
+	email = thibeau@sr.solutions
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = trunk
+[core]
+	excludesFile = $HOME/.gitignore
+	editor = $GIT_EDITOR

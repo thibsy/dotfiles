@@ -1,0 +1,24 @@
+{
+  "assistant": {
+    "default_model": {
+      "provider": "ollama",
+      "model": "llama3.2:latest"
+    },
+    "version": "2"
+  },
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "theme": "VSCode Dark High Contrast",
+  "autosave": "on_focus_change",
+  "base_keymap": "JetBrains",
+  "vim_mode": false,
+  "ui_font_size": 16,
+  "buffer_font_size": 16
+}

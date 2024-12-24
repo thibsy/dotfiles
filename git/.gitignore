@@ -1,0 +1,11 @@
+# phpunit
+**.phpunit.result.cache
+
+# phpstorm
+.idea
+
+# macos
+.DS_Store
+
+# docker
+.env
