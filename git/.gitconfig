@@ -9,5 +9,5 @@
 [init]
 	defaultBranch = trunk
 [core]
-	excludesFile = $HOME/.gitignore
+	excludesFile = ~/.gitignore
 	editor = $GIT_EDITOR
