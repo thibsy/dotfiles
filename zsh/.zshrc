@@ -22,3 +22,11 @@ alias conflicts="git diff --name-only | uniq | xargs $EDITOR"
 alias compi="composer install --ignore-platform-reqs --no-plugins"
 alias compu="composer dump"
 alias npi="npm clean-install --ignore-scripts"
+
+# setup sr-legacy command
+source "$HOME/Development/.sr-legacy/completion.sh"
+# add custom didi aliases
+alias diu="didi up --skip-composer-install --skip-npm-install"
+alias dix="didi exec -uwww-data ilias"
+alias diq="didi exec mysql mariadb -u ilias -pilias ilias"
+alias diqx="didi exec mysql mariadb -u ilias -pilias ilias -e "
