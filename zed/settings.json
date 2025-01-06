@@ -6,6 +6,10 @@
     },
     "version": "2"
   },
+  "auto_install_extensions": {
+    "html": true,
+    "php": true
+  },
   "telemetry": {
     "metrics": false,
     "diagnostics": false
