@@ -34,3 +34,10 @@ done
 
 # setup nano
 ln -s "$(pwd)/nano/.nanorc" "$HOME/.nanorc"
+
+# install didi
+git clone git@git.sr.solutions:Intern/didi.git "$HOME/Development/.didi"
+pip install --user -e "$HOME/Development/.didi"
+# create didi network (treafik)
+docker network create traefik-net
+docker compose -f "$HOME/Development/.didi/didi/share/traefik.yml" up -d
