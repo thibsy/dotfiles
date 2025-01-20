@@ -35,6 +35,10 @@ done
 # setup nano
 ln -s "$(pwd)/nano/.nanorc" "$HOME/.nanorc"
 
+# install sr solutions ag dotfiles
+git clone git@git.sr.solutions:Intern/dotfiles "$HOME/Development/.sr-dotfiles"
+rm "$HOME/.ssh/config" && ln -s "$HOME/Development/.sr-dotfiles" "$HOME/.ssh/config"
+
 # install didi
 git clone git@git.sr.solutions:Intern/didi.git "$HOME/Development/.didi"
 pip install --user -e "$HOME/Development/.didi"
