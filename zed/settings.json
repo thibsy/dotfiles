@@ -8,7 +8,8 @@
   },
   "auto_install_extensions": {
     "html": true,
-    "php": true
+    "php": true,
+    "sql": true
   },
   "telemetry": {
     "metrics": false,
