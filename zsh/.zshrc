@@ -8,7 +8,7 @@ alias pip="pip3"
 export PATH="/opt/homebrew/bin:$PATH"
 
 # add custom editor variables for other tools/configs
-export GIT_EDITOR="nano"
+export GIT_EDITOR="/opt/homebrew/bin/nano"
 export EDITOR="/opt/homebrew/bin/code"
 
 # setup oh-my-zsh theme and plugins
