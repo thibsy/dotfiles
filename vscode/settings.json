@@ -1,0 +1,10 @@
+{
+    "workbench.startupEditor": "none",
+    "workbench.activityBar.location": "hidden",
+    "workbench.statusBar.visible": false,
+    "workbench.tips.enabled": false,
+    "workbench.tree.enableStickyScroll": false,
+    "window.zoomLevel": 1,
+    "editor.fontSize": 14,
+    "outline.collapseItems": "alwaysCollapse"
+}

@@ -15,6 +15,12 @@ ln -s "$(pwd)/brew/brew.env" "/opt/homebrew/etc/homebrew/brew.env"
 ln -s "$(pwd)/git/.gitconfig" "$HOME/.gitconfig"
 ln -s "$(pwd)/git/.gitignore" "$HOME/.gitignore"
 
+# setup visual studio code
+rm "$HOME/Library/Application Support/Code/User/settings.json"
+ln -s "$(pwd)/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
+rm "$HOME/Library/Application Support/Code/User/keybindings.json"
+ln -s "$(pwd)/vscode/keybindings.json" "$HOME/Library/Application Support/Code/User/keybindings.json"
+
 # setup all php versions
 php_versions=("7.4" "8.0" "8.1" "8.2" "8.3" "8.4")
 for version in "${php_versions[@]}"; do
