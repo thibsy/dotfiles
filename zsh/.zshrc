@@ -9,7 +9,7 @@ export PATH="/opt/homebrew/bin:$PATH"
 
 # add custom editor variables for other tools/configs
 export GIT_EDITOR="nano"
-export EDITOR="zed"
+export EDITOR="nano"
 
 # setup oh-my-zsh theme and plugins
 ZSH_THEME="thibsy"
