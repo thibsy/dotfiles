@@ -1,5 +1,6 @@
 tap "shivammathur/extensions"
 tap "shivammathur/php"
+brew "ansible"
 brew "composer"
 brew "nano"
 brew "node@23"
