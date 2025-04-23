@@ -31,3 +31,9 @@ alias diu="didi up --skip-composer-install --skip-npm-install"
 alias dix="didi exec -uwww-data ilias"
 alias diq="didi exec mysql mariadb -u ilias -pilias ilias"
 alias diqx="didi exec mysql mariadb -u ilias -pilias ilias -e "
+
+# load environment variables
+set -a && source "$HOME/Development/.dotfiles/.env" && set +a
+
+# setup sr-cli command
+source "$HOME/Development/.sr-cli/autocomplete"

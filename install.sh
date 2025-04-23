@@ -48,3 +48,18 @@ docker compose -f "$HOME/Development/.didi/didi/share/traefik.yml" up -d
 
 # install ansible playbooks
 git clone git@git.sr.solutions:Intern/ansible-playbooks.git "$HOME/Development/.ansible-playbooks"
+
+# setup environment variables
+cp "$(pwd)/.env.template" "$(pwd)/.env"
+
+# install sr cli
+git clone git@git.sr.solutions:Intern/sr-cli.git "$HOME/Development/.sr-cli"
+composer install --working-dir="$HOME/Development/.sr-cli/bin/sr"
+chmod +x "$HOME/Development/.sr-cli/bin/sr"
+sudo ln -s "$HOME/Development/.sr-cli/bin/sr" /usr/local/bin/sr
+# install sr cli shortcuts
+for file in $HOME/Development/.sr-cli/bin/shortcuts/*; do
+    sudo ln -s "$HOME/Development/.sr-cli/bin/$file" "/usr/local/bin/$(basename $file)"
+done
+# setup configuration
+ln -s "$(pwd)/sr-cli/config.php" "$HOME/Development/.sr-cli/config/config.php"
