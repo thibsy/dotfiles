@@ -45,3 +45,6 @@ pip install --user -e "$HOME/Development/.didi"
 # create didi network (treafik)
 docker network create traefik-net
 docker compose -f "$HOME/Development/.didi/didi/share/traefik.yml" up -d
+
+# install ansible playbooks
+git clone git@git.sr.solutions:Intern/ansible-playbooks.git "$HOME/Development/.ansible-playbooks"
