@@ -1,4 +1,3 @@
-tap "homebrew/bundle"
 tap "shivammathur/extensions"
 tap "shivammathur/php"
 brew "composer"
