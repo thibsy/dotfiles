@@ -5,6 +5,7 @@ alias python="python3"
 alias pip="pip3"
 
 # add homebrew binaries to $PATH
+export PATH="/opt/homebrew/sbin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 
 # add custom editor variables for other tools/configs
