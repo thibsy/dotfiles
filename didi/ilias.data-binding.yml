@@ -1,0 +1,4 @@
+services:
+    ilias:
+      volumes:
+        - ${PWD}/data:/var/www/html/data
