@@ -8,5 +8,6 @@
     "editor.fontSize": 14,
     "outline.collapseItems": "alwaysCollapse",
     "explorer.confirmDelete": false,
-    "git.openRepositoryInParentFolders": "never"
+    "git.openRepositoryInParentFolders": "never",
+    "extensions.ignoreRecommendations": true
 }
