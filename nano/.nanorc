@@ -1,0 +1,20 @@
+# include default syntax highlighting for common languages
+include "/opt/homebrew/share/nano/*.nanorc"
+
+# set default tabsize to 4 spaces
+set tabsize 4
+# enable auto indentation
+set autoindent
+# enable cursor movement using mouse
+set mouse
+
+# enable and format line numbers
+set numbercolor italic,grey,normal
+set linenumbers
+# format keybinding help (footer)
+set functioncolor italic,grey,normal
+set keycolor bold,white,normal
+# format status bar (above footer)
+set statuscolor italic,white,normal
+# format title bar (header)
+set titlecolor bold,white,normal

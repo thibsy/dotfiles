@@ -27,3 +27,6 @@ for version in "${php_versions[@]}"; do
     # we cannot symlink this file; it will not be recognised by php.
     cp "$(pwd)/php/php.ini" "/opt/homebrew/etc/php/${version}/conf.d/10-defaults.ini"
 done
+
+# setup nano
+ln -s "$(pwd)/nano/.nanorc" "$HOME/.nanorc"
