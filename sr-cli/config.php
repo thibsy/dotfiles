@@ -25,4 +25,7 @@ return [
     'mite' => [
         'token' => getenv('MITE_TOKEN') ?: null,
     ],
+    'srdb' => [
+        'password' => getenv('SRDB_TOKEN') ?: null,
+    ],
 ];
