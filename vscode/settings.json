@@ -12,5 +12,6 @@
     "extensions.ignoreRecommendations": true,
     "update.showReleaseNotes": false,
     "window.autoDetectColorScheme": true,
-    "workbench.secondarySideBar.defaultVisibility": "hidden"
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "chat.agent.enabled": false
 }
