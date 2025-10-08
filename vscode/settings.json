@@ -9,5 +9,8 @@
     "outline.collapseItems": "alwaysCollapse",
     "explorer.confirmDelete": false,
     "git.openRepositoryInParentFolders": "never",
-    "extensions.ignoreRecommendations": true
+    "extensions.ignoreRecommendations": true,
+    "update.showReleaseNotes": false,
+    "window.autoDetectColorScheme": true,
+    "workbench.secondarySideBar.defaultVisibility": "hidden"
 }
