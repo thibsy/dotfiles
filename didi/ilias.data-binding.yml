@@ -1,4 +1,4 @@
 services:
     ilias:
       volumes:
-        - ${PWD}/data:/var/www/html/data
+        - ${PWD}/${ILIAS_DATA_DIR:-data}:/var/www/html/${ILIAS_DATA_DIR:-data}
