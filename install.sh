@@ -14,6 +14,10 @@ ln -s "$(pwd)/brew/brew.env" "/opt/homebrew/etc/homebrew/brew.env"
 # setup git
 ln -s "$(pwd)/git/.gitconfig" "$HOME/.gitconfig"
 ln -s "$(pwd)/git/.gitignore" "$HOME/.gitignore"
+ALLOWED_SIGNERS_FILE="$HOME/.config/git/allowed_signers"
+if [ ! -f "$ALLOWED_SIGNERS_FILE" ]; then
+    echo "$(git config --get user.email) namespaces=\"git\" $(cat git config --get user.signingKey)" >> "$ALLOWED_SIGNERS_FILE"
+fi
 
 # setup visual studio code
 rm "$HOME/Library/Application Support/Code/User/settings.json"
