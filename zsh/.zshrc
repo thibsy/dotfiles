@@ -17,6 +17,9 @@ ZSH_THEME="thibsy"
 plugins=(git)
 source "$HOME/.oh-my-zsh/oh-my-zsh.sh"
 
+# setup custom git wrapper
+source "$HOME/Development/.dotfiles/git/git.sh"
+
 # add custom aliases
 alias conflicts="git diff --name-only | uniq | xargs $EDITOR"
 alias compi="composer install --ignore-platform-reqs --no-plugins"
