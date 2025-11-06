@@ -7,6 +7,6 @@ tools.
 #### installation
 
 ```bash
-git clone https://github.com/thibsy/dotfiles.git "$HOME/Development/.dotfiles"
-sh "$HOME/Development/.dotfiles/install.sh"
+git clone https://github.com/thibsy/dotfiles.git "$(pwd)/.dotfiles"
+sh "$(pwd)/.dotfiles/install.sh"
 ```
