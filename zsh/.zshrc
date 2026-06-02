@@ -19,7 +19,7 @@ source "$HOME/.oh-my-zsh/oh-my-zsh.sh"
 
 # add custom aliases
 alias conflicts="git diff --name-only | uniq | xargs $EDITOR"
-alias compi="composer install --ignore-platform-req=\"ext-*\" --no-plugins"
+alias compi="composer install --ignore-platform-req=\"ext-*\" --ignore-platform-req=\"php\" --no-plugins"
 alias compu="composer dump"
 alias npi="npm clean-install --ignore-scripts"
 
