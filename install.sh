@@ -63,3 +63,7 @@ for file in $HOME/Development/.sr-cli/bin/shortcuts/*; do
 done
 # setup configuration
 ln -s "$(pwd)/sr-cli/config.php" "$HOME/Development/.sr-cli/config/config.php"
+
+# setup ghostty terminal
+rm "$HOME/Library/Application Support/com.mitchellh.ghostty/config.ghostty"
+ln -s "$(pwd)/ghostty/config.ghostty" "$HOME/Library/Application Support/com.mitchellh.ghostty/config.ghostty"
