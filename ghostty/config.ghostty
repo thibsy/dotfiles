@@ -1,0 +1,53 @@
+# define window padding
+window-padding-x = 24
+window-padding-balance = true
+window-padding-y = 20
+window-decoration = auto
+
+# define custom font
+font-family = JetBrains Mono
+font-size = 20
+font-thicken = true
+
+# disable ligatures (optionally)
+# font-feature = -calt
+# font-feature = -liga
+# font-feature = -dlig
+
+# increase letter spacing
+adjust-cell-width = 2
+# increase line-heigth
+adjust-cell-height = 6
+
+# define custom cursor
+cursor-style = block
+cursor-style-blink = false
+cursor-color = #FFD700
+
+# define custom color scheme
+background = #0F0F14
+foreground = #F0EAD6
+selection-background = #7A5C00
+selection-foreground = #FFFBF0
+
+minimum-contrast = 4.5
+
+# define normal palette
+palette = 0=#1C1C28
+palette = 1=#FF6B6B
+palette = 2=#6DFF8A
+palette = 3=#FFD700
+palette = 4=#6EB4FF
+palette = 5=#E87FFF
+palette = 6=#40E0D0
+palette = 7=#F0EAD6
+
+# define bright palette
+palette = 8=#3A3A50
+palette = 9=#FF9999
+palette = 10=#99FFB0
+palette = 11=#FFE680
+palette = 12=#A8D4FF
+palette = 13=#F0B3FF
+palette = 14=#80F0E8
+palette = 15=#FFFFFF

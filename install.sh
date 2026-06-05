@@ -34,3 +34,7 @@ done
 
 # setup nano
 ln -s "$(pwd)/nano/.nanorc" "$HOME/.nanorc"
+
+# setup ghostty terminal
+rm "$HOME/Library/Application Support/com.mitchellh.ghostty/config.ghostty"
+ln -s "$(pwd)/ghostty/config.ghostty" "$HOME/Library/Application Support/com.mitchellh.ghostty/config.ghostty"
