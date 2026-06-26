@@ -1,0 +1,18 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "llama.cpp": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "llama-server (local)",
+      "options": {
+        "baseURL": "http://{env:LLAMA_DEFAULT_HOST}:{env:LLAMA_DEFAULT_PORT}/v1"
+      },
+      "models": {
+        "qwen9b": {
+          "name": "qwen3.5:9b (optimized 64K context)"
+        }
+      }
+    }
+  },
+  "lsp": true
+}

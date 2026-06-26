@@ -22,3 +22,13 @@ alias conflicts="git diff --name-only | uniq | xargs $EDITOR"
 alias compi="composer install --ignore-platform-req=\"ext-*\" --no-plugins"
 alias compu="composer dump"
 alias npi="npm clean-install --ignore-scripts"
+
+# load all environment variables (*.env)
+for ENV_FILE in $(find "$HOME/Development/.dotfiles" -type f -name "*.env"); do
+    set -a && source "$ENV_FILE" && set +a
+done
+
+# load model shortcuts
+source "$HOME/Development/.dotfiles/llama/models.sh"
+# load opencode shortcut
+source "$HOME/Development/.dotfiles/opencode/opencode.sh"
