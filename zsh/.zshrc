@@ -32,8 +32,15 @@ alias dix="didi exec -uwww-data ilias"
 alias diq="didi exec mysql mariadb -u ilias -pilias ilias"
 alias diqx="didi exec mysql mariadb -u ilias -pilias ilias -e "
 
-# load environment variables
-set -a && source "$HOME/Development/.dotfiles/.env" && set +a
+# load all environment variables (*.env)
+for ENV_FILE in $(find "$HOME/Development/.dotfiles" -type f -name "*.env"); do
+    set -a && source "$ENV_FILE" && set +a
+done
 
 # setup sr-cli command
 source "$HOME/Development/.sr-cli/autocomplete"
+
+# load model shortcuts
+source "$HOME/Development/.dotfiles/llama/models.sh"
+# load opencode shortcut
+source "$HOME/Development/.dotfiles/opencode/opencode.sh"
