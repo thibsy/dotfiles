@@ -32,3 +32,6 @@ done
 source "$HOME/Development/.dotfiles/llama/models.sh"
 # load opencode shortcut
 source "$HOME/Development/.dotfiles/opencode/opencode.sh"
+
+# load gif conversion shortcut
+source "$HOME/Development/.dotfiles/zsh/video_to_gif.sh"
